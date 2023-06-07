@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family-sans-serif: "Nunito", sans-serif;
+    @apply
+      bg-sky-700
+      max-w-max
+}
+
+ .text-block {
+    @apply
+       p-3 my-2
+ }
+
+ .text-title {
+    @apply   
+       flex self-center
+       text-zinc-200
+       text-xl
+       rounded-full
+       bg-sky-600
+       px-3 py-1 mb-5 mt-4
+ }
+
+ .regular-button {
+   @apply
+       mr-3 p-2
+       text-base font-normal
+       rounded-md bg-sky-500
+}
