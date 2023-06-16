@@ -110,22 +110,6 @@
          max-w-3xl
    }
 
-   /* .text-block {
-      @apply
-         p-3 my-2
-   } */
-
-   /* .text-title {
-      @apply   
-         flex justify-center self-center
-         text-zinc-200
-         text-xl
-         rounded-full
-         bg-sky-600
-         px-3 py-1 mb-5 mt-4
-         w-32
-   } */
-
    .text-highlighted-1 {
       @apply
          backdrop-brightness-90
@@ -142,13 +126,9 @@
       @apply
          text-blue-500
    }
+   
    a:hover {
       @apply underline
-   }
-
-   hr {
-      @apply
-         border-gray-400
    }
    
 </style>

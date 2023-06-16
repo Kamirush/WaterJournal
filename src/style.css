@@ -27,6 +27,15 @@
  .regular-button {
    @apply
        mr-3 p-2
-       text-base font-normal
        rounded-md bg-sky-500
+}
+
+.regular-button:hover {
+   @apply
+      brightness-75
+}
+
+hr {
+   @apply
+      border-gray-400
 }

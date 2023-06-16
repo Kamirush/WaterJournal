@@ -73,5 +73,9 @@
             bg-green-600
     }
 
+    .regular-button {
+        @apply
+            text-base font-normal
+    }
 
 </style>
