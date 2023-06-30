@@ -1,57 +1,63 @@
 <script>
-    import ContentSideArchiveYearIssue from "./ContentSideArchiveYearIssue.vue"
-    export default {
-        props: {
-            year:String
-        },
+import ContentSideArchiveYearIssue from "./ContentSideArchiveYearIssue.vue";
+export default {
+  props: {
+    year: String,
+  },
 
-        components:{ContentSideArchiveYearIssue}
-    }
+  components: { ContentSideArchiveYearIssue },
+};
 </script>
 
 <template>
-    <div class="year">
-        <div class="year-box flex flex-row">
-            <div class="animation-square"></div>
-            <div class="year-name">
-                {{ year }}
-            </div> 
-        </div>
-        
-        <ContentSideArchiveYearIssue/>
+  <div class="year">
+    <div class="year-box flex flex-row">
+      <div class="animation-square"></div>
+      <div class="year-name">
+        {{ year }}
+      </div>
     </div>
+
+    <div class="issues">
+      <ContentSideArchiveYearIssue />
+      <ContentSideArchiveYearIssue />
+      <ContentSideArchiveYearIssue />
+    </div>
+  </div>
 </template>
 
 <style scoped>
-    .year {
-        @apply
-            flex flex-col
-    }
+.year {
+  @apply flex flex-col
+            cursor-default;
+}
 
-    .year-box {
-        
-    }
-
-    .animation-square {
-        @apply
-            flex
+.animation-square {
+  @apply flex
             bg-sky-600
             my-1 w-2
-        
-        
-    }
+            transition-all ease-in-out delay-75 duration-1000;
+}
 
-
-    .year-name {
-        @apply
-            flex
-            py-1 my-1 px-1 w-full
+.year-name {
+  @apply flex
+            p-2 my-1 w-full
             font-semibold text-lg
-            bg-slate-400
-    }
+            bg-slate-400;
+}
+.issues {
+  @apply max-h-0
+        overflow-hidden
+        transition-all ease-in-out delay-75 duration-1000;
+}
 
-    .year-box:hover > .animation-square {
-        @apply
-            transition ease-in-out delay-0 scale-x-150 translate-x-2 duration-300 
-    }
+.year-box {
+}
+.year-box:hover > .animation-square {
+  @apply px-2;
+}
+
+.year:hover > .issues {
+  @apply max-h-48;
+}
 </style>

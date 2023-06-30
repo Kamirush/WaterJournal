@@ -28,6 +28,7 @@
    @apply
        mr-3 p-2
        rounded-md bg-sky-500
+       transition-all ease-in-out delay-0 duration-200
 }
 
 .regular-button:hover {
